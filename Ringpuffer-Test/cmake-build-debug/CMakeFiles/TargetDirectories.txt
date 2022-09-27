@@ -1,0 +1,3 @@
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/Ringpuffer-Test/cmake-build-debug/CMakeFiles/Ringpuffer_Test.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/Ringpuffer-Test/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/Ringpuffer-Test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
