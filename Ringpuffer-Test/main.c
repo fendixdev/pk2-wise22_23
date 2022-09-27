@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int ring[4];
-int arrLength = 4;
+int ring[2];
+int arrLength = 2;
 int head_index = 0;
 int tail_index = 0;
 int size = 0;
