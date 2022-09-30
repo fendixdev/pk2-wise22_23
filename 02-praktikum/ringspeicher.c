@@ -1,32 +1,32 @@
 #include <stdio.h>
+#define SIZE 2
 
-int ring[2];
-int arrLength = 2;
-int head_index = 0;
-int tail_index = 0;
-int size = 0;
+int ring[SIZE];
+int head = 0;
+int tail = 0;
+int count = 0;
 
 void enqueue(int data) {
-    if (size == arrLength){
-        ring[tail_index + 1] = data;
+    if (SIZE == count){
+        ring[(tail + 1) % SIZE] = data;
     } else {
-        ring[tail_index] = data;
-        tail_index = (tail_index + 1) % arrLength;
-        size++;
+        ring[tail] = data;
+        tail = (tail + 1) % SIZE;
+        count++;
     }
 }
 
 int dequeue() {
-    if (size == 0) return -1;
-    int data = ring[head_index];
-    head_index = (head_index + 1) % arrLength;
-    size--;
+    if (count == 0) return -1;
+    int data = ring[head];
+    head = (head + 1) % SIZE;
+    count--;
     return data;
 }
 
 void print(){
-    for(int i = 0; i < arrLength; i++){
-        printf("d: %d ", ring[i]);
+    for(int i = 0; i < SIZE; i++){
+        printf("data: %d | ", ring[i]);
     }
     printf("\n");
 }
