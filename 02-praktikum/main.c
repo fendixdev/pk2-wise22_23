@@ -8,6 +8,6 @@ int main() {
 
     //Aufgabe 2
     char text[5] = {'a', 'B', 'c', 'd', '!'};
-    //upper(text);
+    upper(text);
     return 0;
 }
