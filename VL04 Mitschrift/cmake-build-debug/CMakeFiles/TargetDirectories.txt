@@ -1,0 +1,3 @@
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/VL04 Mitschrift/cmake-build-debug/CMakeFiles/VL04_Mitschrift.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/VL04 Mitschrift/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/VL04 Mitschrift/cmake-build-debug/CMakeFiles/rebuild_cache.dir

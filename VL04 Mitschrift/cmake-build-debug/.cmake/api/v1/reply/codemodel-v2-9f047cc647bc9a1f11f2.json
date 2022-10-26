@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "VL04_Mitschrift",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "VL04_Mitschrift::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VL04_Mitschrift-Debug-6f2c2ae48cb22adebd48.json",
+					"name" : "VL04_Mitschrift",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/VL04 Mitschrift/cmake-build-debug",
+		"source" : "/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/VL04 Mitschrift"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
