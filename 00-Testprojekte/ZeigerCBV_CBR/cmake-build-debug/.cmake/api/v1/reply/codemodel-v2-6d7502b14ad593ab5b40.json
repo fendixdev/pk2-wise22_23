@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ZeigerCBV_CBR",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ZeigerCBV_CBR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZeigerCBV_CBR-Debug-a5eb171f30e9d9807af9.json",
+					"name" : "ZeigerCBV_CBR",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/00-Testprojekte/ZeigerCBV_CBR/cmake-build-debug",
+		"source" : "/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/00-Testprojekte/ZeigerCBV_CBR"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

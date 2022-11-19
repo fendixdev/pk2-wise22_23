@@ -1,0 +1,3 @@
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/00-Testprojekte/ZeigerCBV_CBR/cmake-build-debug/CMakeFiles/ZeigerCBV_CBR.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/00-Testprojekte/ZeigerCBV_CBR/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/00-Testprojekte/ZeigerCBV_CBR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
