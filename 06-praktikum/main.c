@@ -2,6 +2,8 @@
 #include "countspace.h"
 #include "min.h"
 #include "stringcat.h"
+#include "fakultaet.h"
+#include "binomialkoeffizienten.h"
 
 int main() {
 
@@ -23,5 +25,11 @@ int main() {
 
     //Stringcat
     printf("stringcat(): %s\n", stringcat(string1, string2)); //string1 <=> &string1[0], string2 <=> &string2[0]
+
+    //Fakultät berechnen
+    printf("fakultaet(): %llu\n", fakultaet(6)); //Keine größeren Fakultäten als 20! da es nicht mehr in den größten Datentypen gespeichert werden kann.
+
+    //Binomialkoeffizienten berechnen
+    printf("binomialkoeffizienten(): %d\n", binomialkoeffizienten(10,2));
     return 0;
 }

@@ -9,7 +9,7 @@ char *stringcat(const char *str1, const char *str2) {
     while (str1[i] != '\0') {
         i++;
     }
-    strcpy(concat + i - 1, str2);
+    strcpy(concat + i, str2);
     return concat;
 }
 
