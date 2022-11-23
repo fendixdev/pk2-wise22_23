@@ -11,13 +11,6 @@ public:
         this->p = p;
         this->next = nullptr;
     }
-    int append(const char* data);
-    int remove (int p);
-    const char *get(int p);
-    int index_of(const char* data);
-    const char *first();
-    const char *last();
-    void visit_all((*work)(const char* data));
 };
 
 
