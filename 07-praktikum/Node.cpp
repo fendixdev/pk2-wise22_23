@@ -3,3 +3,13 @@
 //
 
 #include "Node.h"
+
+Node::Node() {
+    data = 0;
+    head = nullptr;
+}
+
+Node::Node(char *data) {
+    this->data = data;
+    this->head = nullptr;
+}
