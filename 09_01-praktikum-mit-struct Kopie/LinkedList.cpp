@@ -31,6 +31,8 @@ int LinkedList::insert(char *data, int p) {
     node *newNode;
     newNode->data = data;
     newNode->next = nullptr;
+    
+    //head == nullptr case checken???
 
     if (p == 0) { //Wenn an erster Stelle eingefügt werden soll
         newNode->next = head;
