@@ -1,6 +1,6 @@
 #include "LinkedList.h"
 #include <iostream>
-#include <stdio.h>
+//14.12.22 17:53
 
 int LinkedList::append(char *data) {
     node *current = head;
@@ -24,7 +24,6 @@ int LinkedList::append(char *data) {
 }
 
 int LinkedList::insert(char *data, int p) {
-    std::cout << "call insert func" << std::endl;
     node *current = head;
     if (head == nullptr) {
         std::cout << "List is empty" << std::endl;
