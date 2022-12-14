@@ -1,0 +1,26 @@
+int LinkedList::insert(char * data, int p) { //alte Funktion
+  node * current = head;
+
+  //Fall mit (head == nullptr) bzw. empty list nicht berücksichtigt.
+
+  if (p == 0) { //Wenn an erster Stelle eingefügt werden soll
+    std::cout << "Insert at first position" << std::endl;
+    newNode -> next = head;
+    head = newNode;
+    return 1;
+  }
+  for (int i = 0; i < p - 1; i++) {
+    if (current -> next == nullptr) {
+      std::cout << "p out of bounds" << std::endl;
+      return 0;
+    }
+    current = current -> next;
+  }
+
+  node * newNode; //Fehler vermutlich hier, da keine Instanz mit = new node; erstellt worden ist sondern nur der pointer ins leere.
+  newNode -> data = data;
+  newNode -> next = current -> next;
+  current -> next = newNode;
+
+  return 1;
+}

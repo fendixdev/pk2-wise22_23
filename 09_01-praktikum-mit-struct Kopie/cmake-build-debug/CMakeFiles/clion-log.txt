@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/maximiliandrude/Documents/GitHub/pk2-wise22_23/09_01-praktikum-mit-struct Kopie Select CMakeLists.txt
