@@ -15,6 +15,8 @@ int main() {
     list.addElement("Elem 1");
     list.addElement("Elem 2");
     list.insert("Elem 3", 2);
+    list.append(" LOL");
+    list.addElement("Elem 4");
     list.visit_all(ausgabe);
     return 0;
 }

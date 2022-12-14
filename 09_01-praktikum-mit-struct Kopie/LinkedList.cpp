@@ -2,8 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 
-//TODO: append fix
-int LinkedList::append(char *data) { //Text wird ersetzt, nicht appended
+int LinkedList::append(char *data) {
     node *current = head;
     if (head == nullptr) {
         std::cout << "List is empty" << std::endl;
@@ -12,24 +11,22 @@ int LinkedList::append(char *data) { //Text wird ersetzt, nicht appended
         head->next = nullptr;
         return 1;
     } else {
-            while (current->next != nullptr) {
-                current = current->next;
-            }
-            //append text
-            char *newArray = new char[std::strlen(current->data) + std::strlen(data) + 1];
-            std::strcpy(newArray,
-                        current->data); //Copies the C string pointed by source into the array pointed by destination, including the terminating null character (and stopping at that point).
-            std::strcat(newArray, data); //Appends a copy of the source string to the destination string.
-            current->data = newArray;
-            return 1;
+        while (current->next != nullptr) {
+            current = current->next;
+        }
+        //append text
+        char *newArray = new char[std::strlen(current->data) + std::strlen(data) + 1];
+        std::strcpy(newArray,current->data); //Copies the C string pointed by source into the array pointed by destination, including the terminating null character (and stopping at that point).
+        std::strcat(newArray, data); //Appends a copy of the source string to the destination string.
+        current->data = newArray;
+        return 1;
     }
-    return 0;
 }
 
 int LinkedList::insert(char *data, int p) {
     std::cout << "call insert func" << std::endl;
     node *current = head;
-    if(head == nullptr){
+    if (head == nullptr) {
         std::cout << "List is empty" << std::endl;
         head = new node;
         head->data = data;
@@ -44,7 +41,7 @@ int LinkedList::insert(char *data, int p) {
             return 1;
         } else {
             for (int i = 0; i < p - 1; i++) {
-                if(current->next == nullptr){
+                if (current->next == nullptr) {
                     std::cout << "p out of bounds" << std::endl;
                     return 0;
                 }
