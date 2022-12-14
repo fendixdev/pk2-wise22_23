@@ -27,25 +27,38 @@ int LinkedList::append(char *data) { //Text wird ersetzt, nicht appended
 }
 
 int LinkedList::insert(char *data, int p) {
+    std::cout << "call insert func" << std::endl;
     node *current = head;
-    node *newNode;
-    newNode->data = data;
-    newNode->next = nullptr;
-
-    if (p == 0) { //Wenn an erster Stelle eingefügt werden soll
-        newNode->next = head;
-        head = newNode;
+    if(head == nullptr){
+        std::cout << "List is empty" << std::endl;
+        head = new node;
+        head->data = data;
+        head->next = nullptr;
         return 1;
+    } else {
+        if (p == 0) {
+            node *newNode = new node;
+            newNode->data = data;
+            newNode->next = head;
+            head = newNode;
+            return 1;
+        } else {
+            for (int i = 0; i < p - 1; i++) {
+                if(current->next == nullptr){
+                    std::cout << "p out of bounds" << std::endl;
+                    return 0;
+                }
+                current = current->next;
+            }
+            node *newNode = new node;
+            newNode->data = data;
+            newNode->next = current->next;
+            current->next = newNode;
+            return 1;
+        }
     }
-    for (int i = 0; i < p - 1; i++) {
-        if (current->next == nullptr) return 0;
-        current = current->next;
-    }
-
-    newNode->next = current->next;
-    current->next = newNode;
-    return 1;
 }
+
 
 int LinkedList::remove(int p) {
     node *current = head;
@@ -119,13 +132,5 @@ void LinkedList::addElement(char *data) {
             current = current->next;
         }
         current->next = newNode;
-    }
-}
-
-void LinkedList::printAll() {
-    node *current = head;
-    while (current != nullptr) {
-        std::cout << current->data << std::endl;
-        current = current->next;
     }
 }
