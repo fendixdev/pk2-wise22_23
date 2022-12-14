@@ -29,11 +29,23 @@ int LinkedList::append(char *data) { //Text wird ersetzt, nicht appended
 int LinkedList::insert(char *data, int p) {
     std::cout << "call insert func" << std::endl;
     node *current = head;
+<<<<<<< HEAD
     if(head == nullptr){
         std::cout << "List is empty" << std::endl;
         head = new node;
         head->data = data;
         head->next = nullptr;
+=======
+    node *newNode;
+    newNode->data = data;
+    newNode->next = nullptr;
+    
+    //head == nullptr case checken???
+
+    if (p == 0) { //Wenn an erster Stelle eingefügt werden soll
+        newNode->next = head;
+        head = newNode;
+>>>>>>> a907dfe9ba80864f0efd477c5736eb8d9ecfb7db
         return 1;
     } else {
         if (p == 0) {
@@ -133,4 +145,16 @@ void LinkedList::addElement(char *data) {
         }
         current->next = newNode;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+void LinkedList::printAll() {
+    node *current = head;
+    while (current != nullptr) {
+        std::cout << current->data << std::endl;
+        current = current->next;
+    }
+}
+>>>>>>> a907dfe9ba80864f0efd477c5736eb8d9ecfb7db
